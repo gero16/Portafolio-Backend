@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true })); // Para que funcionen los formu
 
 app.get('/', (req, res) => {
   console.log(req.body)
-  res.send('Hello World!')
+  res.json({usuario: "Bienvenido!"})
 })
 
 app.post('/', (req, res) => {
